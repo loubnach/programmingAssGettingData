@@ -1,8 +1,10 @@
+
+  
 ##download and unzip the data source into file name dtset.zip
 ###########  
-download.file(url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
-                destfile="dtset.zip")
-unzip("dtset.zip")
+#download.file(url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
+ #               destfile="dtset.zip")
+#unzip("dtset.zip")
 ##############
 
 ## in the main directory 'UCI HAR Dataset' there is two data files :
@@ -76,4 +78,3 @@ new_dt<-global_dt[ , grepl( "mean$" , names( global_dt ) )|grepl( "std$" , names
 # Write the output in the file  aggregates_data.txt
 write.table(agregate_dt,file="aggregates_data.txt",row.name=FALSE)
   
- 

@@ -21,3 +21,15 @@ In train and test dataset we have 561 variables for the assignement i extracted 
 
 in the final data set or the output there is 81 variable (for mean and std) and 180 rows (30 subjects*6 activities)
 
+==================================
+ 		script
+====================================
+
+to execute  the script, put run_analysis.R and the data repository UCI HAR Dataset . 
+you have to install packages
+install.packages("dplyr")
+library(dplyr)
+
+install.packages("tidyr")
+library(tidyr)
+and execute the script : run_analysis.R 
